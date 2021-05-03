@@ -5,25 +5,25 @@
 class Crzy < Formula
   desc "deploy your tests in less than 3 seconds."
   homepage "https://github.com/go-crzy/crzy"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/go-crzy/crzy/releases/download/v0.2.0/crzy_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "6e240ef1bf92fcf913ff5b4bdacfd4c43ad275b97498a59364f1db0723f95a26"
+    url "https://github.com/go-crzy/crzy/releases/download/v0.2.1/crzy_0.2.1_darwin_x86_64.tar.gz"
+    sha256 "fe78d498875350cd9c5503721c2e49f0cf24071f868577845eec7cafdc88ae3a"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/go-crzy/crzy/releases/download/v0.2.0/crzy_0.2.0_Darwin_arm64.tar.gz"
-    sha256 "bb51f9fcddd720f2d97e05bc4d636a2d9761c49f3560faf55bb9fada303db18d"
+    url "https://github.com/go-crzy/crzy/releases/download/v0.2.1/crzy_0.2.1_darwin_arm64.tar.gz"
+    sha256 "29ee2fc37efdbfa6bcb05b7eff1aeebc17b1119f86ee5869866f081dc6b7d502"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/go-crzy/crzy/releases/download/v0.2.0/crzy_0.2.0_Linux_x86_64.tar.gz"
-    sha256 "d892bb30df19445a79ba90bff1c820b8097b5b4b1ede3d50003b286027a44467"
+    url "https://github.com/go-crzy/crzy/releases/download/v0.2.1/crzy_0.2.1_linux_x86_64.tar.gz"
+    sha256 "a2aa9b6efdfe1050093592f7b48613c8ef7f8babf411dd66d80db572da022d48"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/go-crzy/crzy/releases/download/v0.2.0/crzy_0.2.0_Linux_arm64.tar.gz"
-    sha256 "f79e180856183c49f83a9d6d0b324aacc47890435a616da502aca7445092e43b"
+    url "https://github.com/go-crzy/crzy/releases/download/v0.2.1/crzy_0.2.1_linux_arm64.tar.gz"
+    sha256 "13fa7dbf4e8b65565eb8ff3d13a286f9e3fa394eac0720f0635688d629bb816e"
   end
 
   depends_on "git"
